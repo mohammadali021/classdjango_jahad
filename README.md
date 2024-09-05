@@ -1,0 +1,1 @@
+# classdjango_jahad
