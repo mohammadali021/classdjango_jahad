@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<h1>اطلاعات کارکنان مورد نظر</h1>
+    <ul>
+
+        	<li>
+                {{ info.name }}
+            </li>
+            <li>
+                {{ info.family }}
+            </li>
+            <li>
+                {{ info.age }}
+            </li>
+
+
+    </ul>
+
+
+
+
+{% endblock %}

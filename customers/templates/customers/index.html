@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	مشتری
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'customers/style.css' %}">
+
+
+{% endblock %}
+{% block content %}
+    <table>
+        <tr>
+            <th><b>نام مشتری</b></th>
+            <th><b>نام خانوادگی</b></th>
+            <th><b>سن</b></th>
+            <th><b>شغل</b></th>
+
+
+        </tr>
+        {% for j in all_customers %}
+            <tr>
+                <td><a href={% url 'etelaat' s=j.slug %}>{{ j.name }}</a></td>
+
+                <td>{{ j.family }}</td>
+
+                <td>{{ j.age }}</td>
+                <td>{{ j.job }}</td>
+
+
+            </tr>
+
+        {% endfor %}
+
+    </table>
+{% endblock %}

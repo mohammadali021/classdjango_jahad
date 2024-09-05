@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+    login page
+{% endblock %}
+{% block content %}
+    <h1>login page</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert with an example link</a>. Give it a click if you
+                like.
+            </div>
+        {% endfor %}
+
+    {% endif %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {#        {{ userlogin.user }}#}
+        <br><br>
+        {#        {{ userlogin.password }}#}
+        <input type="text" name="user" placeholder="enter user">
+        <input type="password" name="password" placeholder="password">
+        <br><br>
+        <input type="submit">
+
+
+    </form>
+
+
+{% endblock %}

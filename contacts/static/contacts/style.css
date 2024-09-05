@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    font-size: 60px;
+}
+.form-control{
+    width: 700px;
+    margin-left: 430px;
+}
+.form-label{
+    margin-left: 750px;
+}
+.btn-primary{
+    margin-left: 750px;
+
+}

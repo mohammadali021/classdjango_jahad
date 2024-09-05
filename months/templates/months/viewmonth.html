@@ -1,0 +1,15 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block title %}
+	month page
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'months/viewmonth.css' %}">
+{% endblock %}
+{% block content %}
+	{% for i in month_name %}
+		<h1>{{ i|upper}}</h1>
+	{% endfor %}
+
+{% endblock %}

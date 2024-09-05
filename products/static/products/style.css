@@ -1,0 +1,55 @@
+body{
+    background-color: cornsilk;
+    text-align: center;
+
+}
+li{
+    font-size: 20px;
+    color: crimson;
+    list-style-type: none;
+    padding-top: 15px;
+
+}
+li:hover{
+    width: 120px;
+    padding-top: 10px;
+    color: darkblue;
+    background-color: chocolate;
+    border: cyan;
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-radius:5px ;
+    text-align: center;
+}
+hr{
+    margin-top: 20px;
+    color: crimson;
+}
+table{
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: darkblue;
+}
+td{
+    border: 2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: darkgrey;
+    color: indigo;
+    padding: 15px;
+}
+td:hover{
+    color: white;
+    /*font-size: 30px;*/
+    width: 150px;
+
+}
+th{
+    background-color: darkgrey;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+}

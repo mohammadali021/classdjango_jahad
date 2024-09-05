@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    product list
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href={% static "products/style.css" %}>
+{% endblock %}
+
+{% block content %}
+    <h1>Show product list</h1>
+    <hr>
+
+
+    <table>
+        <tr>
+            <th><b>نام محصولات</b></th>
+            <th><b>قیمت</b></th>
+            <th><b>نظرات</b></th>
+        </tr>
+        {% for j in products %}
+            <tr>
+                <td><a href={% url 'viewpro' s=j.slug %}>{{ j.title }}</a></td>
+
+                <td>{{ j.price }}</td>
+
+                <td>{{ j.description }}</td>
+
+            </tr>
+
+        {% endfor %}
+
+    </table>
+    <hr>
+    <h2>number of products : {{ pro_num }}</h2>
+    <h2>average of price : {{ info.price__avg }}</h2>
+    <h2>Max of price : {{ info.price__max }}</h2>
+    <h2>Min of price : {{ info.price__min }}</h2>
+{% endblock %}

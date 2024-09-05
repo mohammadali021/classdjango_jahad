@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+	Iphone details
+
+{% endblock %}
+{% block head %}
+	<link rel="stylesheet" href="{% static 'products/style.css' %}">
+{% endblock %}
+
+{% block content %}
+	<ul>
+
+            <li><h3>Name:{{mobile.title}}</h3></li>
+            <li><h3>price:{{mobile.price}}</h3></li>
+            <li><h3>description:{{mobile.description}}</h3></li>
+            <li><h3>
+                {% if mobile.is_active %}
+                        <h4> active:موجوده</h4>
+            	        {% else %}
+                        <h4> active:نداریمش </h4>
+
+                        {% endif %}
+            </h3></li>
+
+
+
+
+
+    </ul>
+{% endblock %}
